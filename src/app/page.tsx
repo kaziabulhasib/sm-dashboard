@@ -1,5 +1,5 @@
-const Homepage = () => {
-  return <div className=''>Hello Next js</div>;
+const HomePage = () => {
+  return <div className=''>HomePage</div>;
 };
 
-export default Homepage;
+export default HomePage;
