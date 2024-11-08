@@ -13,13 +13,13 @@ const data = [
     fill: "white",
   },
   {
-    name: "Boys",
+    name: "Girls",
     count: 55,
     fill: "#FAE27C",
   },
   {
-    name: "Girls",
-    count: 45,
+    name: "Boys",
+    count: 55,
     fill: "#C3EBFA",
   },
 ];
