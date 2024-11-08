@@ -13,32 +13,32 @@ import {
 } from "recharts";
 const data = [
   {
-    name: "Monday",
+    name: "Mon",
     present: 40,
     absent: 80,
   },
   {
-    name: "Tuesday",
+    name: "Tue",
     present: 70,
     absent: 50,
   },
   {
-    name: "Wednesday",
+    name: "Wed",
     present: 90,
     absent: 70,
   },
   {
-    name: "Thursday",
+    name: "Thu",
     present: 80,
     absent: 60,
   },
   {
-    name: "Friday",
+    name: "Fri",
     present: 70,
     absent: 50,
   },
   {
-    name: "Saturday",
+    name: "Sat",
     present: 40,
     absent: 90,
   },
@@ -54,9 +54,18 @@ const AttendanceChart = () => {
       <div className='h-full'>
         <ResponsiveContainer width='100%' height='90%'>
           <BarChart width={500} height={300} data={data}>
-            <CartesianGrid strokeDasharray='3 3' />
-            <XAxis dataKey='name' />
-            <YAxis />
+            <CartesianGrid
+              vertical={false}
+              strokeDasharray='3 3'
+              stroke='#ddd'
+            />
+            <XAxis
+              dataKey='name'
+              axisLine={false}
+              tick={{ fill: "#d1d5db" }}
+              tickLine={false}
+            />
+            <YAxis axisLine={false} />
             <Tooltip />
             <Legend
               align='left'
