@@ -7,7 +7,7 @@ import UserCard from "@/components/UserCard";
 
 const AdminPage = () => {
   return (
-    <div className='flex flex-row md:flex-row p-4 gap-4'>
+    <div className='flex flex-col md:flex-row p-4 gap-4'>
       {/* left  */}
       <div className='w-full lg:w-2/3  flex flex-col gap-8'>
         {/* user cards  */}
