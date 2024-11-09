@@ -917,147 +917,90 @@ export const announcementsData = [
 
 
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
+// Calendar events for November 4 to November 9, 2024
 export const calendarEvents = [
+  // Events for November 4, 2024
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: new Date(2024, 10, 4, 8, 0),
+    end: new Date(2024, 10, 4, 8, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: new Date(2024, 10, 4, 9, 0),
+    end: new Date(2024, 10, 4, 9, 45),
   },
+  
+  // Events for November 5, 2024
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 12, 10, 0),
-    end: new Date(2024, 7, 12, 10, 45),
+    start: new Date(2024, 10, 5, 10, 0),
+    end: new Date(2024, 10, 5, 10, 45),
   },
-  {
+  
+ // Continuing with similar structure for other days
+ // Events for November 6, 2024
+ {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 12, 11, 0),
-    end: new Date(2024, 7, 12, 11, 45),
-  },
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 12, 13, 0),
-    end: new Date(2024, 7, 12, 13, 45),
-  },
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 12, 14, 0),
-    end: new Date(2024, 7, 12, 14, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 13, 9, 0),
-    end: new Date(2024, 7, 13, 9, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 13, 10, 0),
-    end: new Date(2024, 7, 13, 10, 45),
-  },
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 13, 11, 0),
-    end: new Date(2024, 7, 13, 11, 45),
-  },
+    start: new Date(2024, 10, 6, 11, 0),
+    end: new Date(2024, 10, 6, 11, 45),
+ },
+ 
+ // Events for November 7, 2024
+ {
+   title: "Chemistry",
+   allDay: false,
+   start: new Date(2024 ,10 ,7 ,13 ,0),
+   end : new Date(2024 ,10 ,7 ,13 ,45)
+ },
 
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 13, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
-  },
-  {
-    title: "Math",
-    allDay: false,
-    start: new Date(2024, 7, 14, 8, 0),
-    end: new Date(2024, 7, 14, 8, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 14, 10, 0),
-    end: new Date(2024, 7, 14, 10, 45),
-  },
+ // Events for November 8, 2024
+ {
+   title : "History",
+   allDay : false,
+   start : new Date (2024 ,10 ,8 ,14 ,0),
+   end : new Date (2024 ,10 ,8 ,14 ,45)
+ },
 
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 14, 13, 0),
-    end: new Date(2024, 7, 14, 13, 45),
-  },
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 14, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 15, 9, 0),
-    end: new Date(2024, 7, 15, 9, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 15, 10, 0),
-    end: new Date(2024, 7, 15, 10, 45),
-  },
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 15, 11, 0),
-    end: new Date(2024, 7, 15, 11, 45),
-  },
-
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 15, 14, 0),
-    end: new Date(2024, 7, 15, 14, 45),
-  },
-  {
-    title: "Math",
-    allDay: false,
-    start: new Date(2024, 7, 16, 8, 0),
-    end: new Date(2024, 7, 16, 8, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 16, 9, 0),
-    end: new Date(2024, 7, 16, 9, 45),
-  },
-
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 16, 11, 0),
-    end: new Date(2024, 7, 16, 11, 45),
-  },
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 16, 13, 0),
-    end: new Date(2024, 7, 16, 13, 45),
-  },
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 16, 14, 0),
-    end: new Date(2024, 7, 16, 14, 45),
-  },
+ // Events for November 9, 2024
+ {
+   title : "Math",
+   allDay : false,
+   start : new Date (2024 ,10 ,9 ,8 ,0),
+   end : new Date (2024 ,10 ,9 ,8 ,45)
+ },
+ {
+   title : "English",
+   allDay : false,
+   start : new Date (2024 ,10 ,9 ,9 ,0),
+   end : new Date (2024 ,10 ,9 ,9 ,45)
+ },
+ {
+   title : "Biology",
+   allDay : false,
+   start : new Date (2024 ,10 ,9 ,10 ,0),
+   end : new Date (2024 ,10 ,9 ,10 ,45)
+ },
+ {
+   title : "Physics",
+   allDay : false,
+   start : new Date (2024 ,10 ,9 ,11 ,0),
+   end : new Date (2024 ,10 ,9 ,11 ,45)
+ },
+ {
+   title : "Chemistry",
+   allDay : false,
+   start : new Date (2024 ,10 ,9 ,13 ,0),
+   end : new Date (2024 ,10 ,9 ,13 ,45)
+ },
+ {
+   title : "History",
+   allDay : false,
+   start : new Date (2024 ,10 ,9 ,14 ,0),
+   end : new Date (2024 ,10 ,9 ,14 ,45)
+ }
 ];
