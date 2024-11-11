@@ -35,6 +35,7 @@ const Performance = () => {
       <h2 className='font-medium absolute bottom-16 left-0 right-0 m-auto text-center'>
         1st Semester - 2nd Semester
       </h2>
+      {/* to do : done  */}
     </div>
   );
 };
