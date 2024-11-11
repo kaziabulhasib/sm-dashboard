@@ -15,7 +15,7 @@ const SingleStudentPage = () => {
           <div className='bg-lamaSky px-4 py-6 rounded-md flex-1 flex gap-4'>
             <div className='w-1/3'>
               <Image
-                src='https://i.ibb.co/WnHPdFs/student-image.jpg'
+                src='https://i.ibb.co/5nqdd5h/profile-pic-linkup.jpg'
                 alt=''
                 width={144}
                 height={144}
