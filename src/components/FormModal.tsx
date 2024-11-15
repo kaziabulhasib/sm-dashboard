@@ -57,7 +57,6 @@ const FormModal = ({
         className={`${size} flex items-center justify-center rounded-full ${bgColor} `}>
         <Image src={`/${type}.png`} alt='' width={16} height={16} />
       </button>
-      {/* to do : add diff form for dif element  */}
 
       {open && (
         <div className='w-screen h-screen absolute left-0 top-0 bg-black bg-opacity-60 z-50 flex items-center justify-center'>
