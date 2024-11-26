@@ -49,7 +49,7 @@ const FormModal = ({
       </form>
     ) : (
       // to do : create the form
-      <TeacherForm type='create' />
+      <TeacherForm type='update' data={data} />
     );
   };
   return (
