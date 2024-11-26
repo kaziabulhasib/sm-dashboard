@@ -25,12 +25,12 @@ const InputField = ({
       <input
         type={type}
         {...register(name)}
-        className='w-full ring-[1.5px] ring-gray-300 text-sm p-2 rounded-md'
+        className='ring-[1.5px] ring-gray-300 p-2 rounded-md text-sm w-full'
         {...inputProps}
         defaultValue={defaultValue}
       />
       {error?.message && (
-        <p className='text-red-500 text-xs'>{error.message.toString()}</p>
+        <p className='text-xs text-red-400'>{error.message.toString()}</p>
       )}
     </div>
   );
