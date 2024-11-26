@@ -46,14 +46,19 @@ const TeacherForm = ({
       <span className='text-xs font-medium text-gray-400'>
         Authentication Information{" "}
       </span>
-      <input
-        type='text'
-        {...register("userName")}
-        className='ring-[1.5px] ring-gray-300 text-sm p-2 rounded-md'
-      />
-      {errors.userName?.message && (
-        <p className='text-red-500'>{errors.userName?.message.toString()}</p>
-      )}
+      <div className='flex flex-col gap-2'>
+        <label className='text-xs text-gray-500'>User Name</label>
+        <input
+          type='text'
+          {...register("userName")}
+          className='ring-[1.5px] ring-gray-300 text-sm p-2 rounded-md'
+        />
+        {errors.userName?.message && (
+          <p className='text-red-500 text-xs'>
+            {errors.userName?.message.toString()}
+          </p>
+        )}
+      </div>
       <span className='text-xs font-medium text-gray-400'>
         Personal Information
       </span>
