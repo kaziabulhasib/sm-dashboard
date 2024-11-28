@@ -7,7 +7,9 @@ const HomePage = () => {
         School Management System HomePage
       </h1>
       <div className='flex justify-center'>
-        <Link className='py-8 text-center hover:underline ' href='/admin'>
+        <Link
+          className='my-8 px-6 py-4 border rounded-md font-medium text-center text-xl hover:bg-gray-700 hover:text-white '
+          href='/admin'>
           Go To admin Page
         </Link>
       </div>
