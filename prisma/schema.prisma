@@ -109,6 +109,7 @@ model Exam {
   endTime   DateTime
   lessonId  Int
   lesson    Lesson   @relation(fields: [lessonId], references: [id])
+  results   Result[]
 }
 
 model Assignment {
@@ -118,9 +119,19 @@ model Assignment {
   endDate   DateTime
   lessonId  Int
   lesson    Lesson   @relation(fields: [lessonId], references: [id])
+  results   Result[]
 }
 
-// model Result {}
+model Result {
+  id    Int @id @default(autoincrement())
+  score Int
+
+  examId       Int
+  exam         Exam       @relation(fields: [examId], references: [id])
+  assignmentId Int
+  assignment   Assignment @relation(fields: [assignmentId], references: [id])
+}
+
 // model Attendance {}
 // model Event {}
 // model Announcement {}
