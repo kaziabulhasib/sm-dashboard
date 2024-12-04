@@ -65,15 +65,17 @@ model Grade {
 }
 
 model Class {
-  id           Int       @id @default(autoincrement())
-  name         String    @unique
-  capacity     Int
-  supervisorId String
-  supervisor   Teacher   @relation(fields: [supervisorId], references: [id])
-  lessons      Lesson[]
-  students     Student[]
-  gradeId      Int
-  grade        Grade     @relation(fields: [gradeId], references: [id])
+  id            Int            @id @default(autoincrement())
+  name          String         @unique
+  capacity      Int
+  supervisorId  String
+  supervisor    Teacher        @relation(fields: [supervisorId], references: [id])
+  lessons       Lesson[]
+  students      Student[]
+  gradeId       Int
+  grade         Grade          @relation(fields: [gradeId], references: [id])
+  events        Event[]
+  announcements Announcement[]
 }
 
 model Subject {
@@ -147,8 +149,21 @@ model Attendance {
   lesson    Lesson   @relation(fields: [lessonId], references: [id])
 }
 
-// model Event {}
-// model Announcement {}
+model Event {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  classId     Int?
+  class       Class? @relation(fields: [classId], references: [id])
+}
+
+model Announcement {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  classId     Int?
+  class       Class? @relation(fields: [classId], references: [id])
+}
 
 enum UserSex {
   MALE
