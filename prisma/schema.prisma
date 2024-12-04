@@ -16,7 +16,8 @@ model Student {
   id          String       @id
   username    String       @unique
   name        String
-  Phone       String?
+  Phone       String?      @unique
+  email       String?      @unique
   address     String?
   img         String?
   bloodType   String
@@ -36,7 +37,8 @@ model Teacher {
   id        String    @id
   username  String    @unique
   name      String
-  Phone     String?
+  Phone     String?   @unique
+  email     String?   @unique
   address   String?
   img       String?
   bloodType String
@@ -51,7 +53,8 @@ model Parent {
   id        String    @id
   username  String    @unique
   name      String
-  Phone     String?
+  Phone     String    @unique
+  email     String?   @unique
   address   String?
   createdAt DateTime  @default(now())
   students  Student[]
@@ -59,7 +62,7 @@ model Parent {
 
 model Grade {
   id       Int       @id @default(autoincrement())
-  level    String    @unique
+  level    Int       @unique
   students Student[]
   classes  Class[]
 }
@@ -131,12 +134,12 @@ model Result {
   id    Int @id @default(autoincrement())
   score Int
 
-  examId       Int
-  exam         Exam       @relation(fields: [examId], references: [id])
-  assignmentId Int
-  assignment   Assignment @relation(fields: [assignmentId], references: [id])
+  examId       Int?
+  exam         Exam?       @relation(fields: [examId], references: [id])
+  assignmentId Int?
+  assignment   Assignment? @relation(fields: [assignmentId], references: [id])
   studentId    String
-  Student      Student    @relation(fields: [studentId], references: [id])
+  Student      Student     @relation(fields: [studentId], references: [id])
 }
 
 model Attendance {
@@ -150,19 +153,22 @@ model Attendance {
 }
 
 model Event {
-  id          Int    @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   title       String
   description String
   classId     Int?
-  class       Class? @relation(fields: [classId], references: [id])
+  class       Class?   @relation(fields: [classId], references: [id])
+  startTime   DateTime
+  endTime     DateTime
 }
 
 model Announcement {
-  id          Int    @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   title       String
   description String
   classId     Int?
-  class       Class? @relation(fields: [classId], references: [id])
+  class       Class?   @relation(fields: [classId], references: [id])
+  date        DateTime
 }
 
 enum UserSex {
